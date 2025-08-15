@@ -1,0 +1,192 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+
+:root { /*Raiz do documento tudo o quê colocar aqui vai servir para o documento inteiro */
+   --cor0:#c5ebd6;
+   --cor1:#83e1ad;
+   --cor2:#3ddc84; 
+   --cor3:#2fa866;
+   --cor4:#1a5c37;
+   --cor5:#063d1e;
+   /* Isso que está à cima são variáveis em CSS3 usadas para quando quiser pegar uma cor por exemplo ao invéz de ter que ficar decorando o hexadecimal dessa cor já deixa a plaeta de cores pronta com essas variáveis no início do projeto. */
+
+   --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+   --fonte-destaque:'Bebas Neue', sans-serif;
+   --fonte-android: 'Android', cursive;
+
+}
+
+* {  /* Configurações globais */
+    margin: 0px;
+    padding: 0px;
+}
+
+body {  /* Configurações para o body inteiro */
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after {
+    content: '\1F517';
+}
+
+
+header {  /*Configurações para o Header */
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {  /*Configurações para os h1 que está dentro do header */
+    color: white;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.304);
+}
+
+header > p { /*Configurações para os p que está dentro do header */
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.304);
+}
+
+nav {  /*Configurações para o nav */
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.382);
+}
+
+nav > a {  /* Configurações para os links dentro de nav */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover { /*Aplicando um efeito hover para esses links que estão dentro de nav */
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+main {  /*Configurações para main (conteúdo principal) */
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {  /* COnfigurações para o h1 que está dentro de main */
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+}
+
+
+main h2 { /*Configurações para o h2 que está dentro de main */
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+}
+
+main p {  /*Configurações para o p que está dentro de main */
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.em;
+    line-height: 2em; /*Altura entre linha */
+}
+
+main strong { /*Aplicando configuração para o strong que está em main */
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {  /*Configuração para os links que estão em main */
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover {  /* Aplicando um efeito hover sobre esses links que estão em main */
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img {  /*Imagens que estão dentro de main */
+    width: 100%;
+}
+
+main img .pequena { /*Uma classe que colocamos lá no html para as fotos pequenas */
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.282);
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;;
+}
+
+aside > ul {
+        list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer { /*COnfigurações para o footer (Rodapé do site) */
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    
+}

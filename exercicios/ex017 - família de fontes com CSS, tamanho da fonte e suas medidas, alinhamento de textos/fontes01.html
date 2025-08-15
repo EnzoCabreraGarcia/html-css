@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; /*Conjunto de Fontes onde o processador ele não vai colocar essas 3 fontes, primeiro ele vai na Arial se o navegador que a pessoa estiver usando não carregar a Arial ele vai pra Helvetica e se não tiver Helvetica vai para sans-serif. */
+
+            font-size: 1em;
+            
+            /*Recomendado: px e em
+            16px = 1em 
+            16 px é o tamanho normal da fonte.*/
+            
+            /*Medidas Absolutas
+            cm -> centímetro, mm ->mílimetro, in -> polegada, px -> pixel, pt -> ponto, pc -> paica
+            
+            Medidas Relativas
+            em -> medida atual para o tamanho da fonte, ex -> altura atual de uma fonte, rem -> relativo ao rute, vh -> altura da viewport, % -> porcentagem.  
+            */
+        }
+        /*Lembrando que não necessariamente precisa colocar a mesma fonta na página inteira eu posso por exemplo abaixo colocar uma fonte única no h1 por exemplo: */
+        h1 {
+            font-family: Georgia;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quos at ipsum distinctio quasi iure incidunt rem temporibus numquam consequatur quisquam assumenda repellat reiciendis quia, tempora quam quis esse inventore!</p>
+    <h2>Subtítulo do exercícios</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quam architecto consectetur a non, qui cupiditate provident rerum, quis repellat quia vero, cumque corporis necessitatibus eius quae quod mollitia? Sunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro voluptatum laboriosam aspernatur reprehenderit veniam accusamus quisquam iusto exercitationem consequuntur esse accusantium tenetur rem facere magnam pariatur doloribus, illo magni numquam.</p>
+    
+</body>
+</html>

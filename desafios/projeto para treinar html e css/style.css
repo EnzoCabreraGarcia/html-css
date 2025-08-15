@@ -1,0 +1,14 @@
+body {
+    background-image: linear-gradient(to right, #4fffdc, #3d8577);
+    font-family: Arial;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 16px;
+}

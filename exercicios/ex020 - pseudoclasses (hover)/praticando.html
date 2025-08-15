@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando CSS com HTML</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: red;
+        }
+        
+        div {
+            text-align: center;
+        }
+
+        div:hover {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Praticando </h1>
+    <div>
+        passe o mouse aqui para ver o parágrafo escondido.
+        <p>Texto escondido só vou mostrar quando passar o mouse por cima da div</p>
+    </div>
+</body>
+</html>
