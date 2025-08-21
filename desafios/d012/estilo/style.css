@@ -1,68 +1,65 @@
 @charset "UTF-8";
 
-* {
+* { /*Configuração padrão para o nosso site */    
     margin: 0px;
     padding: 0px;
 }
 
-:root {
-    
-}
-
-html, body {
+html, body {  /*Estilizando o html e o body */
     min-height: 100vh;
     background-color: darkgray;
 }
 
-header {
+header {  /* Aplicando essas configurações para o header */
     background-color: black;
     color: white;
     text-align: center;
 }
 
-header > h1 {
+
+header > h1 {  /*Aplicando essa configuração específica para o h1 que está dentro de header */
     padding-top: 50px;
     font-variant: small-caps;
 }
 
-header > p {
+header > p { /*Aplicando essa ocnfiguração específica para o p que está dentro de header */
     padding-bottom: 50px;
 }
 
-a {
+a {  /*Estilizando todas as tag a (links) de nosso site. */
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
 
-a:hover {
+a:hover {  /* Aplicando um efeito hover para os links do nosso site */
     text-decoration: underline;
 }
 
-section {
+section {  /*Aplicando essas configurações para a section de nosso site */
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
 }
 
-section.normal {
+section.normal {  /*Aplicando a configuração a class normal que está em section  */
     background-color: white;
     color: black;
 }
 
-section.imagem {
+section.imagem { /* Aplicando essa configuração para a class imagem que está em section */
     background-color: rgb(51, 51, 51);
     color: white;
 }
 
-section.imagem > p {
+section.imagem > p {  /* Aplicando essa configuração para a tag p que está dentro da class imagem que está dentro de section */
     background-color: rgba(0, 0, 0, 0.258);
     width: 400px;
 }
 
 
-footer {
+footer {  /*Aplicando essas configurações para o footer */
     background-color: black;
     text-align: center;
     color: white;
