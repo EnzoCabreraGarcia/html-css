@@ -12,6 +12,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         td, th {
@@ -19,9 +27,21 @@
             padding: 10px;
         }
 
+
+        /* Configuração para dar aquele efeito zebrado na tabela */
+        tbody > tr:nth-child(2n) {  
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
 
         .num {
@@ -34,31 +54,37 @@
     <!--
         Anatomia para tabelas grandes: 
         TABLE
+            CAPTION (legenda da tabela)
             THEAD
                 TR,TD,TH
             TBODY
                 TR,TD,TH
             TFOOT
                 TR,TD,TH-->
+
+        <!--OBS: Sempre que for um daod utilizaremos o td e quando for um título utilizaremos th.-->
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>São Paulo</td>
+                <td >São Paulo</td>
                 <td class="num">45 919 049</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td class="num">21 168 791</td>
+                <td class="num" class=>21 168 791</td>
             </tr>
             <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">17 264 943</td>
+                <td >Rio de Janeiro</td>
+                <td class="num" >17 264 943</td>
             </tr>
             <tr>
                 <td>Bahia</td>
@@ -159,7 +185,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <strong>
                     <td class="num">210.147.125</td>
                 </strong>
