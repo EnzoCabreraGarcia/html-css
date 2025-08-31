@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Iframe</title>
+    <style>
+        iframe {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o us ode um iframe</h1>
+    <p>Acessando o site do
+        
+        <!--Tamanho padrão iframe: 300 lagura x 150 de altura-->
+        <iframe src="https://www.cursoemvideo.cursoemvideo.com" frameborder="0"> <!--Esse frameborder é a borda sendo 1 com borda e 0 sem borda, é obvio que depois dá pra colcoar uma borda usando o css-->
+            
+        <!--Iframe é como se estivessemos abrindo uma nova aba mais dentro do nosso site, nesse exemplo fizemos o iframe do site do curso em vídeo e no quadradinho do iframe vai aparecer o site inteiro do curso em vídeo-->
+        <a href="https://www.cursoemvideo.com" target="_blank"></a>
+        <!--Nesse caso nós adicionamos o link depois do Iframe pois caso o iframe não funcione a pessoa consegue clicar no link -->
+
+        </iframe>
+
+    curso em vídeo para aprender mais</p>
+
+    <p>O site do <iframe src="https://www.google.com.br" frameborder="0"></iframe> também é muito legal</p> <!--Nesse caso do site do google vai aparecer que deu erro, pois tem sites que bloqueiam o uso de iframes, então nesse caso o google não permite.-->
+
+
+    <p>O repositório do Guanabara
+        
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0"></iframe>
+    
+        é bem legal</p>
+    
+</body>
+</html>
