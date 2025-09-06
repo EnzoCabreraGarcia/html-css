@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!--Todo Formulário tem que estar entre as tags <form> </form>-->
+    <form action="cadastro.php" method="post">
+        <!--Enviar o dado de um formulário nesse exemplo da aula ele usou o php então quando ouver a ação de clicar no botão ele vai mandar os dados para esse lugar.-->
+
+        <p> <!--Dentro desse for do label nós colocamos o id que colocamos no input-->
+            <label for="inome">Nome:</label> 
+            <input type="text" name="inome" id="nome">
+        </p> <!--Input de caixa para texto-->
+
+        <p>
+            <label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p> <!--Input de caixa para texto-->
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p> <!--Input para botão, e essa value é o que vai estar escrito no botão-->
+    </form>
+    <!--Essa é uma das formas mais simples de fazer um formulário -->
+
+
+</body>
+
+</html>
