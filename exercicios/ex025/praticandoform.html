@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício para praticar Formulários</title>
+</head>
+<body>
+    <h1>Exercício Para Pratciar Formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="inome">Nome Completo</label>
+            <input type="text" name="nome" id="inome" required maxlength="40">
+        </p>
+        <p>
+            <label for="iemail">E-mail</label>
+            <input type="email" name="email" id="iemail" required placeholder="Digite seu E-mail">
+        </p>
+        <p>
+            <label for="iage">Idade</label>
+            <input type="number" name="idade" id="iage" required min="10" max="100" step="1">
+        </p>
+        <p>
+            <label for="idata">Data do Evento</label>
+            <input type="date" name="data" id="idata" required>
+        </p>
+        <p>
+            <label for="itime">Horário de início</label>
+            <input type="time" name="horario" id="itime" required>
+        </p>
+        <p>
+            <label for="isenha">Senha de Acesso</label>
+            <input type="password" name="senha" id="isenha" minlength="6" maxlength="12" required placeholder="Digite sua Senha">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
