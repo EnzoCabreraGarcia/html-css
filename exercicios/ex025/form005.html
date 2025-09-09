@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Sexo (M ou F)</legend>
+            <input type="radio" name="sx" id="isxmas"> <label for="isxmas">Masculino</label>
+            <input type="radio" name="sx" id="isxfem"> <label for="isxfem">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete </label>
+
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label>
+
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label>
+
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+
+    <!--Nesta aula vimos mais 2 tipos de inputs que querendo ou não são bastante utilizados em formulários que é o de checkbox que é aqueles quadradinhos de asinalar podendo assinalar mais de 1 (type=checkbox). E o outro tipo de input é o radio que são aquelas bolinhas que também são de assinalar mais nessa é necessário que apenar 1 opção seja assinalada (type=radio), e todo botão de rádio que faz parte do mesmo grupo precisam ter o mesmo name-->
+    
+</body>
+</html>
