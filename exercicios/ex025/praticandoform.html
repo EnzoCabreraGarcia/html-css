@@ -37,6 +37,46 @@
             <input type="reset" value="Limpar">
         </p>
     </form>
+
+
+    <h1>Segundo Exercício para Pratciar</h1>
+    <h2>Cadastro para Academia</h2>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="40">
+        </p>
+        <p>
+            <label for="iemail">E-mail</label>
+            <input type="email" name="email" id="iemail" required placeholder="Digite seu E-mail">
+        </p>
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16">
+        </p>
+        <p>
+            <label for="iage">Idade</label>
+            <input type="number" name="idade" id="iage" step="1" min="10" max="80">
+        </p>
+        <p>
+            <label for="ipeso">Peso (kg)</label>
+            <input type="text" name="peso" id="ipeso" step="0.1" min="0">
+        </p>
+        <p>
+            <label for="idate">Data de Matrícula</label>
+            <input type="date" name="data" id="idate">
+        </p>
+        <p>
+            <label for="itime">Horário de treino preferido</label>
+            <input type="time" name="time" id="itime">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
     
 </body>
 </html>
