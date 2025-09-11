@@ -38,6 +38,8 @@
         </p>
     </form>
 
+    <hr>
+
 
     <h1>Segundo Exercício para Pratciar</h1>
     <h2>Cadastro para Academia</h2>
@@ -74,9 +76,49 @@
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+  </form>
+
+  <hr>
+
+    <h1>Inscrição Campeonato de Futebol 2025</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="inome">Nome completo</label>
+            <input type="text" name="nome" id="inome" required maxlength="50">
+        </p>
+        <p>
+            <label for="iemail">E-mail</label>
+            <input type="email" name="email" id="iemail" placeholder="seuemail@exemplo.com" required>
+        </p>
+        <p>
+            <label for="iage">Idade</label>
+            <input type="number" name="idade" id="iage" min="10" max="60" required>
+        </p>
+        <p>
+            <label for="idata">Data De Nascimento</label>
+            <input type="date" name="data" id="idata">
+        </p>
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" min="8" max="16" placeholder="Crie sua senha" required>
+        </p>
+
+    
+        <legend>Posição em campo</legend>
+         <input type="radio" name="posicao" id="igol"> <label for="igol">Goleiro</label>
+         <input type="radio" name="posicao" id="idef"><label for="idef">Defesa</label>
+         <input type="radio" name="posicao" id="imeia"> <label for="imeia">Meio-Campo</label>
+        <input type="radio" name="posicao" id="iatac"> <label for="iatac">Ataque</label>
 
 
-    </form>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+</form>
+  
     
 </body>
 </html>
