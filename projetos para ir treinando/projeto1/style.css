@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* font-family: "Playfair Display", serif; h1,h2,h3 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*  font-family: "Roboto", sans-serif; textos normais e menus */
+
+:root {
+    --cor-base_cafe: #4E342E; /*base, café */ 
+    --cor-bege_claro: #f5e9da; /*fundo, aconchegante */
+    --cor-dourado_suave: #c89d7c; /*Detalhes, luxo */
+    --cor-branco: #ffffff; /*texto para fundo escuro*/
+    --cor-preta: #222222; /*Texto para fundo claro */
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--cor-preta);
+    background-color: var(--cor-bege_claro);
+}
+
+#header {
+    background-image: linear-gradient(135deg, var(--cor-base_cafe), var(--cor-dourado_suave));
+    padding: 40px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+#header h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.18s ease;
+}
+
+.menu li a:hover {
+    color: rgb(48, 14, 14);
+    font-weight: bolder;
+}
+
+.btn-maps {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    background-color: #8b5e3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.18s ease;
+}
+
+.btn-maps:hover {
+    background-color: var(--cor-dourado_suave);
+}
+
+#hero {
+    background-image: url('imagens/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+#hero h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    padding: 12px 24px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--cor-base_cafe);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.18s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--cor-branco);
+    color: var(--cor-base_cafe);
+}
+
+
+#sobre {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#sobre h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    font-size: 18px;
+    color: var(--cor-preta);
+    font-weight: 500;
+}
+
+
+#cardapio {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#cardapio h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#cardapio ol {
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+#cardapio table {
+    width: 80%;
+    margin: 0 auto 30px auto;
+    border-collapse: collapse;
+}
+
+#cardio th, #cardapio td {
+    border: 1px solid #ccc;
+    padding: 12px 20px;
+}
+
+#cardapio th {
+    background-color: #f4e7d8;
+    font-weight: 700;
+}
+
+#cardapio tr:nth-child(even) {
+    background-color: #f9f3ee;
+}
+
+#contato {
+    padding: 60px 20px;
+    background-color: #f7f2ef;
+    text-align: center;
+}
+
+#contato h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px; 
+    margin-bottom: 20px;
+}
+
+#contato p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 500px;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #8b5e3c;
+}
+
+button[type="submit"] {
+    padding: 12px;
+    background-color: #4E342E;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.18s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #6b4226;
+}
+
+footer {
+    background-image: linear-gradient(135deg, #c89d7c, #4e342e);
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+#footer hr {
+    border: 0.5px solid rgba(255,255,255,0.4);
+    margin-bottom: 15px;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.18s ease;
+}
+
+#footer a:hover {
+    color: #c89d7c;
+}
+
+@media (max-width: 768px) {
+    #header h1 { font-size: 32px; }
+    #header h3 { font-size: 20px; }
+    #hero h2 { font-size: 28px; }
+    body { font-size: 16px; }
+    #cardapio table { width: 100%; }
+    .menu { flex-direction: column; gap: 10px; }
+}
