@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+/* Reset básico */ 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f9fa;
+}
+
+/*NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* nav-links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+/* ----------------------------------------*/
+
+/*Section */ 
+.hero {
+    background-image: linear-gradient(to right, #007bff, #6c63ff);
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+
+}
+
+.hero-text {
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #6a0dad;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #8a2be2;
+}
+
+.download {
+    background: #fff;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+.download-text {
+    max-width: 600px;
+    text-align: center;
+} 
+
+.download-text h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.download-text p{
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.services {
+    padding: 50px;
+    background-color: white;
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services-card {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+    
+.card {
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 15px;
+    width: 300px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    color: #007BFF;
+}
+
+.about {
+    background-color: #f8f9fa;
+    padding: 60px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    max-width: 500px;
+    color: darkgray;
+    padding: 30px;
+}
+
+
