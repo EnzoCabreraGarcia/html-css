@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        /*OBS: lembrando que o pai (container) é a onde nós colocamos o display flex e os filhos (itens) são os elementos que estão dentro do container, flex-direction também é um comando que só se coloca no pai o padrão é row (linha) e se usarmos o flex-direction: row-reverse, ele vai enverter as ordens da direita para esquerda agora. flex-direction: column, ele deixa o container em coluna de cima para baixo e se usarmos o flex-direction: column-reverse, os itens vão ser lidos de baixo pra cima. Então é row, row-reverse, column, column-reverse. */
+
+
+        div.container {
+            background-color: lightsalmon;
+
+            display: flex; /* ativa o flexbox */;
+
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex: auto; /* faz com que os itens cresçam e encolham conforme o espaço disponível, do tamnaho do container principal */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    
+</body>
+</html>
