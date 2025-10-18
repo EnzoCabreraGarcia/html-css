@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuação de flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: lightsalmon;
+        }
+
+        main {
+            background-color: lightgreen;
+            height: 100vh;
+            width: 100vw;
+
+            display: flex; /*Colocamos o display:flex aqui no main porquê lembrando que o main é o pai de section e o display:flex é sempre colocado no elemento pai pra que os elementos filhos possam ser flexíveis*/
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section {
+            background-color: lightseagreen;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Tela de Login</h1>
+        </section>
+    </main>
+
+    <!--Nessa aula vimos como pegar um formulário de login por exemplo de forma resumida e deixar ele ao centro utilizando apenas flexbox sem precisar ficar fazendo conta, apenas usando justify-content: center e align-items: center e com isso ele já fica certinho alinhado ao centro  -->
+    
+</body>
+</html>
