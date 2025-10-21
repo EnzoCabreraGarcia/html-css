@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-content</title>
+    <style>
+
+        /* OBS DA AULA: Nesta Aula vimos a propriedade align-content do Flexbox. Ela alinha as linhas do container flexível quando há espaço extra no eixo transversal (perpendicular ao eixo principal). No exemplo, usamos flex-wrap: wrap para permitir que os itens quebrem em várias linhas. A propriedade align-content: stretch faz com que as linhas se estiquem para preencher o espaço disponível no contêiner flexível. align-content pode ser: stretch, flex-start, flex-end, center, space-between, space-around, space-evenly */
+
+        div.conteiner {
+            background-color: lightsalmon;
+            height: 400px;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: stretch;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+    
+</body>
+</html>
