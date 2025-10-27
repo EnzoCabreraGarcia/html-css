@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* OBS DA AULA: Nessa aula vimos flex que é shorthand para flex-grow, flex-shrink e flex-basis nessa ordem, Exemplo: flex: 0 1 200px. E a W3C recomenda usar o flex em vez de usar as propriedades individuais. */
+
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            
+        }
+
+        div#cxA {
+            /*flex-shrink: 0;
+            flex-grow: 1; 
+            flex-basis: 200px;*/
+
+            /* shorthand, Recomendado usar assim:  */
+            flex: 0 1 200px;
+        }
+
+        div#cxB {
+            flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis: 200px;
+        }
+
+        div#cxC {
+            flex-shrink: 3;
+            flex-grow: 1;
+            flex-basis: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+    
+</body>
+</html>

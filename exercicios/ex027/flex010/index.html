@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+
+        /* OBS DA AULA: Nessa aula vimos então mais alguns elementos flex-items, que são flex-shrink que é pode encolher ou não (1 é que ele pode encolher, e 0 é que ele não pdoe encolher), e o flex-grow que é para crescer (1 é que ele pode crescer, e 0 é que ele não pode crescer). E o flex-basis que é o tamanho base do item flexível.    Recomendando usar flex-shrink 1 e flex-grow 1 pra ficar bom em todas as telas. E lembrando também que como essas são configurações de item é só no item pra colocarmos.*/
+
+        div.container {
+            background-color: lightsalmon;
+
+            display: flex; /* ativa o flexbox */;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 250px;
+            flex-shrink: 1; /* encolhe se necessário */
+            flex-grow: 1; /* cresce para preencher o espaço disponível */
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+    
+</body>
+</html>
