@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* Essa configuração é para telas menores que 600px, nesse caso o nav ficará em coluna, o h1 do header vai para um flex-basis de 50px e a largura dos links que está dentro do nav vai para 90vw que preenche quase a largura total */
+header, header > nav {
+    flex-flow: column nowrap;
+}
+
+header > h1 {
+    flex-basis: 50px;
+}
+
+header > nav > a {
+    width: 90vw;
+}
+
