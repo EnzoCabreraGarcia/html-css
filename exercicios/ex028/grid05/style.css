@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* OBS DA AULA: Nessa aula começamos a ver Grid Layout para Itens/Areas. Nessa aula então começamos vendo grid-row-start ( linha onde começa o item ) e grid-row-end ( linha onde termina o item ) e também grid-column-start ( coluna onde começa o item ) e grid-column-end ( coluna onde termina o item ). Esses quatro atributos são usados para posicionar os itens dentro do grid. No exemplo dessa aula temos uma grid com 3 linhas e 4 colunas. O primeiro item ( caixa1 ) começa na linha 1 e termina na linha 2, ou seja, ocupa apenas a primeira linha, e começa na coluna 1 e termina na coluna 5, ou seja, ocupa todas as colunas. O segundo item ( caixa2 ) começa na linha 2 e termina na linha 4, ou seja, ocupa as linhas 2 e 3, e começa na coluna 1 e termina na coluna 3, ou seja, ocupa as colunas 1 e 2. O terceiro item ( caixa3 ) começa na linha 2 e termina na linha 4, ou seja, ocupa as linhas 2 e 3, e começa na coluna 3 e termina na coluna 5, ou seja, ocupa as colunas 3 e 4. */
+
+.container {
+    border: 1px solid black;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.caixa1 {
+    background-color: aquamarine;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.caixa2 {
+    background-color: coral;
+    grid-row-start: 2;
+    grid-row-end: 4;   
+    grid-column-start: 1;
+    grid-column-end: 3;    
+}
+
+.caixa3 {
+    background-color: gold;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}

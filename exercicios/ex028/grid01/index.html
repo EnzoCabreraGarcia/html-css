@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout na Prática</title>
+    <style>
+
+        /* OBS DA AULA: Nessa aula vimos as primeiras propriedades do Grid Layout para conteiner que é o display: grid; (ativa o grid layout), grid-template-columns: auto auto auto; (define as colunas do grid, netão nesse caso vai ser 3 colunas com largura automática), grid-template-rows: auto auto auto; (define as linhas do grid, nesse caso vai ser 3 linhas com altura automática), gap: 5px; (define o espaçamento entre os itens do grid) */
+
+        div.container {
+            border: 3px solid blue;
+            height: 250px;
+            display: grid; /* Define o container como um grid layout */
+            grid-template-columns: auto auto auto; /* Três colunas com largura automática */
+            grid-template-rows: auto auto auto; /* Três linhas com altura automática */
+            gap: 5px ; /* Espaçamento entre os itens do grid */
+        }
+
+        div.item {
+            border: 3px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    
+</body>
+</html>

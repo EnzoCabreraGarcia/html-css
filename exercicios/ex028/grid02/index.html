@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout na Prática</title>
+    <style>
+
+        /* OBS DA AULA: Nessa aula vimos mais algumas propriedades em Grid Layout para conteiners, que são align-items: start, end, center, strech (padrão) que define o alinhamento dos itens no eixo vertical, justify-items: start, end, center, strech (padrão) que define o alinhamento dos itens no eixo horizontal, align-content: start, end, center, strech (padrão), space-between, space-around, space-evenly que define o alinhamento do conteúdo do grid no eixo vertical e justify-content: start, end, center, strech (padrão), space-between, space-around, space-evenly que define o alinhamento do conteúdo do grid no eixo horizontal */
+
+        div.container {
+            border: 3px solid blue;
+            height: 250px;
+            display: grid; 
+            grid-template-columns: auto auto auto; 
+            grid-template-rows: auto auto auto; 
+            gap: 5px ; 
+
+            align-items: start; /* Alinhamento dos itens no eixo vertical */
+            justify-items: normal; /* Alinhamento dos itens no eixo horizontal */
+            align-content: normal; /* Alinhamento do conteúdo do grid no eixo vertical */
+            justify-content: normal; /* Alinhamento do conteúdo do grid no eixo horizontal */
+
+        }
+
+        div.item {
+            border: 3px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    
+</body>
+</html>
